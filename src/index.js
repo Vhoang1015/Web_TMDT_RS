@@ -1,11 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import dotenv from 'dotenv';
-import dbConnect from './config/dbconnect.js';
-
-dotenv.config();
+import sequelize from './config/dbconnect.js';
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 
@@ -16,5 +14,5 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port http://localhost:${PORT}`);
 });
-// console.log(`Server is running on port http://localhost:${PORT}`);
-module.exports = app;
+
+export default app;
