@@ -1,5 +1,6 @@
+// models/User.model.js
 import { DataTypes } from "sequelize";
-import sequelize from "../config/dbconnect";
+import sequelize from "../config/dbconnect.js";
 
 const User = sequelize.define('User', {
     user_id: {

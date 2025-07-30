@@ -1,6 +1,6 @@
 // models/Stock.model.js
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/database.js';
+import sequelize from '../config/dbconnect.js';
 
 const Stock = sequelize.define('Stock', {
   stock_id: {

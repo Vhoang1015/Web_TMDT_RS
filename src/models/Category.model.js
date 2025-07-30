@@ -1,5 +1,6 @@
+// models/Category.model.js
 import { DataTypes, NOW } from "sequelize";
-import sequelize from "../config/dbconnect";
+import sequelize from "../config/dbconnect.js";
 
 const Category = sequelize.define('Category', {
     category_id:{
